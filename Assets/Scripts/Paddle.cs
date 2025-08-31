@@ -14,7 +14,7 @@ public class Paddle : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         float verticalInput = 0f;
 
@@ -22,7 +22,6 @@ public class Paddle : MonoBehaviour
         {
             verticalInput = 1f;
         }
-
         else if(Input.GetKey(moveDownKey))
         {
             verticalInput = -1f;
